@@ -74,7 +74,7 @@ procedure TfrmBrowser.browserNavigationCompleted(Sender: TCustomEdgeBrowser; IsS
 begin
   Self.Caption := browser.LocationURL;
 
-  if (browser.LocationURL <> 'https://umod.org/dashboard') and (browser.LocationURL <> 'https://umod.org/login') then
+  if (browser.LocationURL <> 'https://umod.org/dashboard') and (browser.LocationURL <> 'https://umod.org/register') and (browser.LocationURL <> 'https://umod.org/password/reset') and (browser.LocationURL <> 'https://umod.org/login') and not browser.LocationURL.Contains('https://discord.com') then
   begin
     browser.Navigate('https://umod.org/dashboard');
     Exit;
