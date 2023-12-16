@@ -2,8 +2,8 @@ object frmBrowser: TfrmBrowser
   Left = 0
   Top = 0
   Caption = 'uMod Login Helper'
-  ClientHeight = 500
-  ClientWidth = 800
+  ClientHeight = 800
+  ClientWidth = 1000
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -150,8 +150,8 @@ object frmBrowser: TfrmBrowser
   object browser: TEdgeBrowser
     Left = 0
     Top = 0
-    Width = 800
-    Height = 500
+    Width = 1000
+    Height = 800
     Align = alClient
     TabOrder = 0
     AllowSingleSignOnUsingOSPrimaryAccount = False
@@ -159,5 +159,7 @@ object frmBrowser: TfrmBrowser
     UserDataFolder = '%LOCALAPPDATA%\bds.exe.WebView2'
     OnCreateWebViewCompleted = browserCreateWebViewCompleted
     OnNavigationCompleted = browserNavigationCompleted
+    ExplicitWidth = 800
+    ExplicitHeight = 500
   end
 end
